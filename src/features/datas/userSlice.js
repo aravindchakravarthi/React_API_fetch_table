@@ -21,7 +21,7 @@ export const updateUser = createAsyncThunk('user/updateUser', async (updatedUser
 
 export const deleteUser = createAsyncThunk('user/deleteUser', async (delid) => {
   try{
-    const response = await axios.delete(`https://jsonplaceholder.typicode.com/users/${delid}`)
+    await axios.delete(`https://jsonplaceholder.typicode.com/users/${delid}`)
     return delid;
   }catch(error){
     throw error;

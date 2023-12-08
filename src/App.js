@@ -36,7 +36,6 @@ const App = () => {
       name: uname,
       email: uemail,
       phone: uphone,
-      // Add other necessary fields
     };
 
     // Dispatch the updateUser action with the updated user data
