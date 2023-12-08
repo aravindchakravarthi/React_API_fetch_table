@@ -5,14 +5,14 @@ import { FaEdit } from "react-icons/fa";
 
 
 const App = () => {
-  const { users, loading, error } = useSelector((state) => state.user);
+  const { users, error } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const [editID, setEditID] = useState(null);
   const [uname, setUname] =useState();
   const [uemail, setUemail] =useState();
   const [uphone, setUphone] =useState();
 
-  useEffect(() => {
+  useEffect(() =>{
     dispatch(getUsers());
   }, [dispatch]);
 
